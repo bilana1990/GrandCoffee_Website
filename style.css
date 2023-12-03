@@ -1,0 +1,542 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none; 
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header section start */
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+}
+header a h1{
+    color: white;
+    font-weight: bold;
+}
+header nav a{
+    color: white;
+    padding: 20px;
+}
+header nav a:nth-child(1){
+    color: rgb(176, 85, 85);
+}
+header nav a:hover{
+    color:rgb(176, 85, 85) ;
+    transition: .2s;
+}
+
+
+/* header section finish */
+
+
+/* slider section starts */
+.slider_section{
+    background-image: url(img/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+
+.container{
+    width: 100%;
+    /* margin: 10px auto; */
+}
+.carousel{
+    /* border: 1px solid #ccc; */
+    height: 600%;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    height: 100%;
+    display: flex;
+    width: 400%;
+    /* border: 1px solid red; */
+    transition: all 0.6s;
+}
+.slider section{
+    flex-basis: 100%;
+    margin: 100px 2%;
+}
+.slider section h2{
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+    
+}
+.slider section h2 span{
+    color: black;
+    font-size: 50px;
+    font-weight: lighter;
+}
+.slider section p{
+    color: white;
+    width: 40%;
+}
+.slider section button{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.slider section button:hover{
+    transition: .3s;
+    background-color:rgb(176, 85, 85) ;
+    border: 1px solid rgb(176, 85, 85);
+}
+.controls .arrow{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.controls .arrow i{
+    font-size: 50px;
+}
+.arrow.left{
+    left: 35%;
+    margin-top: 150px;
+    border: 1px solid white;
+    width: 30px;
+    text-align: center;
+    background-color: white;
+}
+.arrow.left:hover{
+    background-color:rgb(176, 85, 85) ;
+    color: white;
+    border: 1px solid rgb(176, 85, 85);
+    transition: .3s;
+}
+.arrow.right{
+    right: 60%;
+    margin-top: 150px;
+    border: 1px solid white;
+    width: 30px;
+    text-align: center;
+    background-color: white;
+}
+.arrow.right:hover{
+    background-color:rgb(176, 85, 85) ;
+    color: white;
+    border: 1px solid rgb(176, 85, 85);
+    transition: .3s;
+}
+.controls ul{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.controls ul li{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    margin: 10px;
+    background: transparent;
+    cursor: pointer;
+}
+.controls ul li.selected{
+    background: rgb(176, 85, 85);
+} 
+
+/* slider section finish */
+
+
+
+/* about us section starts */
+.about_us .conteiner h2{
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(176, 85, 85) ;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+.about_us .conteiner p{
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+.about_us .conteiner button{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    margin-top: 4%;
+    margin-left: 15%;
+    cursor: pointer;
+}
+.about_us .conteiner button:hover{
+    transition: .3s;
+    background-color:rgb(176, 85, 85) ;
+    border: 1px solid rgb(176, 85, 85);
+}
+.about_us img{
+    width: 35%;
+    margin-left: 55%;
+    margin-top: -30%;
+}
+
+/* about us section finish */
+
+
+/* section our galery starts */
+.our_gallery h2{
+    color:rgb(176, 85, 85) ;
+    margin-left: 40%;
+    margin-top: 10%;
+    font-size: 40px;
+    font-weight: bold;
+}
+.our_gallery p{
+    margin-left: 5%;
+    margin-top: 2%;
+    text-align: center;
+}
+.our_gallery .img_conteiner .our_gallery_imgs{
+    width: 400px;
+    height: 400px;
+    
+}
+.our_gallery .img_conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2%;
+}
+.our_gallery .img_conteiner .our_gallery_imgs:hover{
+    opacity: 0.5;
+    transition: .3s;
+    
+}
+.our_gallery button{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    margin-top: 4%;
+    margin-left: 45%;
+    cursor: pointer;
+}
+.our_gallery button:hover{
+    transition: .3s;
+    background-color:rgb(176, 85, 85) ;
+    border: 1px solid rgb(176, 85, 85);
+}
+/* section our galery finish */
+
+
+
+/* services section starts */
+.services{
+    background-image: url(img/services-bg.png);
+    background-size: cover;
+    margin-top: 10%;
+    height: 600%;
+    width: 100%;
+    background-attachment: fixed;
+    padding-bottom: 5%;
+}
+.services h2{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 45%;
+    padding-top: 100px;
+}
+.services p{
+    color: white;
+    font-size: 20px;
+    margin-left: 30%;
+}
+.services_conteiner{
+    width: 30%;
+    /* height: 300px; */
+    background-color: orangered;
+}
+.services_conteiner img{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    top: 10%;
+    left: 40%;
+}
+.services_conteiner h2{
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    left: -15%;
+    /* left: -70px; */
+}
+.services_conteiner p{
+    font-size: 15px;
+    position: relative;
+    top: -30px;
+    left: -15%;
+    /* left: -65px; */
+    text-align: center;
+}
+.services_conteiner button{
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 10%;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.services_conteiners{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+/* services section finish */
+
+
+
+
+/* testimonial section starts */
+
+.testimonial h2{
+    color: orangered;
+    font-size: 40px;
+    margin-left: 20%;
+    margin-top: 5%;
+    font-weight: bold;
+}
+.testimonial p{
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+
+
+
+.container1{
+    width: 90%;
+    margin: 10px auto;
+}
+.carousel1{
+    /* border: 1px solid #ccc; */
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.slider1{
+    height: 100%;
+    display: flex;
+    width: 400%;
+    /* border: 1px solid red; */
+    transition: all 0.3s;
+}
+.slider1 section{
+    
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-right: 300px;
+}
+    
+.slider1 section h3{
+    margin-top: 20px;
+    color: orangered;
+    font-size: 30px;
+    font-weight: bold;
+}
+.slider1 section p{
+    max-width: 70%;
+}
+
+.controls1 .arrow{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.controls1 .arrow i{
+    font-size: 50px;
+}
+.arrow.left1{
+    left: 10px;
+}
+.arrow.right1{
+    right: 10px;
+}
+
+.controls1 ul{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.controls1 ul li{
+    width: 50px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    margin: 10px;
+    background: orangered;
+    cursor: pointer;
+}
+.controls1 ul li.selected{
+    background: transparent;
+}
+
+
+
+/* testimonial section finish */
+
+
+/* section contact us starts */
+.contact_us h2{
+    color: orangered;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.contact_us .contact_forms{
+    margin-top: 50px;
+    background-image: url(img/img-9.png);
+    height: 400px;
+    
+    background-repeat: no-repeat;
+}
+.contact_forms form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.contact_forms form input{
+    height: 50px;
+    border-radius: 40px;
+    padding-left: 30px;
+}
+.contact_forms form :nth-child(4){
+    height: 80px;
+}
+.contact_forms form button{
+    width: 150px;
+    height: 50px;
+    border: 1px solid orangered;
+    border-radius: 40px;
+    margin-left: 40%;
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+}
+.contact_forms form button:hover{
+    background-color: white;
+    color: black;
+    transition: .9s;
+}
+
+.map{
+    margin-left: 45%;
+    margin-top: -27%;
+}
+/* section contact us finish */
+
+
+
+
+/* footer section starts */
+footer{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer_nav a:hover{
+    color: orangered;
+}
+.footer_contact_us a:hover{
+    color: orangered;
+}
+
+/* footer section finish */
+
+
+
+
+/* scroling button */
+
+.to-top{
+    background: orangered;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+ 
+ 
+ }
+ .to-top.active{
+     bottom: 32px;
+     pointer-events: auto;
+     opacity: 1;
+     
+ } 
+
+
+
+
+
+ .burger_menu img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    visibility: hidden;
+    
+}
+
+
+
+iframe{
+    width: 100%;
+    height: 400px;
+}
