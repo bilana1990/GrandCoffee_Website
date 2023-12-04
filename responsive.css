@@ -295,4 +295,48 @@
         height: 400px;
     }
     
+    
 }
+
+@media only screen and (max-width: 1800px){
+.contact_us h2 {
+    margin-left: 10%;
+    position: absolute;
+    color: orangered;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -72px;
+}
+    .contact_us .contact_forms {
+    width: 106%;
+    margin-top: 99px;
+    background-image: url(img/img-9.png);
+    height: 481px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
